@@ -1,0 +1,78 @@
+{
+  "tags": [
+    {
+      "id": 1,
+      "nametags": "Java"
+    },
+    {
+      "id": 2,
+      "nametags": "Javascript"
+    }
+  ],
+  "portofolio": [
+    {
+      "id": 1,
+      "tittle": "Rock Paper Scissors",
+      "image": "/portofolio/BatuGuntingKertas.png",
+      "subTittle": "Simple Rock Paper Scissors Game using ReactJS ",
+      "tags": [
+        "Javascript",
+        "ReactJS"
+      ]
+    },
+    {
+      "id": 2,
+      "tittle": "Loream Ipsum",
+      "image": "/portofolio/BatuGuntingKertas2.png",
+      "subTittle": "lalalsaala lililili",
+      "tags": [
+        "tags.id[0]"
+      ]
+    }
+  ],
+  "certificate": [
+    {
+      "id": 1,
+      "tittle": "Mentor Study Sharing ",
+      "image": "/certificate/Mentor-STRING-2023.png",
+      "subTittle": "balbalbal tai",
+      "tags": [
+        "Javascript",
+        "ReactJS"
+      ],
+      "category": "Event"
+    },
+    {
+      "id": 2,
+      "tittle": "Front-End Web untuk Pemula",
+      "image": "/certificate/Sertifikat_frontend_Pemula_dociding.png",
+      "subTittle": "balbalbal tai",
+      "tags": [
+        "Javascript",
+        "HTML",
+        "CSS"
+      ],
+      "category": "Skill"
+    }
+  ],
+  "Contact": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "JohnDoe@Gmail.com",
+      "Message": "AKUU INGIN REHATT"
+    },
+    {
+      "name": "adasd",
+      "email": "asdsad@bacot.comsadsa",
+      "message": "asdsa",
+      "id": 2
+    },
+    {
+      "name": "Halo",
+      "email": "Adip@gmail.com",
+      "message": "Akirnya kelar gaes",
+      "id": 3
+    }
+  ]
+}

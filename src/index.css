@@ -1,13 +1,358 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+:root {
+  --primary-color: #98c5df;
+  --secondary-color: #8ccef2;
+  --Tertiary-color: #82b6d3;
+  --primary-font-size: 15px;
+}
+
+* {
+  font-family: "Poppins";
+}
+.profile {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  margin-top: 625px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+header {
+  font-weight: 1000;
+  background-color: var(--primary-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+header li {
+  font-weight: 1000;
+  display: inline-block;
+  margin-right: 45px;
+  font-size: var(--primary-font-size);
+}
+
+.tag {
+  padding-inline-start: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.tag li {
+  padding: 8px 30px 8px 30px;
+  background-color: var(--primary-color);
+  border-radius: 9px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 1000;
+}
+
+.tag li:hover {
+  background-color: var(--Tertiary-color);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  margin-top: 135px;
+  margin-left: 50px;
+  margin-bottom: 70px;
+}
+
+.icon {
+  width: 55px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 21px;
+}
+
+/* Home */
+main .home {
+  margin-top: 255px;
+  margin-left: 50px;
+}
+
+.home button {
+  padding: 14px 40px;
+  border-radius: 102px;
+  font-weight: bolder;
+  background-color: var(--Tertiary-color);
+  border: 2px solid var(--Tertiary-color);
+}
+
+.home table {
+  margin-left: 80px;
+}
+.home h1 {
+  line-height: 70px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.home td:last-child {
+  padding-left: 100px;
+  padding-top: 80px;
+}
+aside {
+  float: left;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: var(--primary-color);
+  top: 0;
+  right: 0;
+  margin-top: 105px;
+  margin-left: -58px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  margin: 5px;
+  width: 30px;
+}
+
+.home .profile {
+  justify-content: center;
+  width: 350px;
+  height: auto;
+  margin-left: 100px;
+}
+#LinkedIn:hover {
+  content: url("./image/logo/linkedin.png");
+}
+#github:hover {
+  content: url("./image/logo/github-logo.png");
+}
+#Instagram:hover {
+  content: url("./image/logo/Instagram.png");
+}
+#gmail:hover {
+  content: url("./image/logo/Email.png");
+}
+
+/* About */
+.about .profile {
+  width: 325px;
+  height: auto;
+}
+.about p {
+  line-height: 40px;
+  width: 700px;
+  font-size: large;
+  text-align: justify;
+}
+.about table {
+  display: flex;
+
+  justify-content: space-between;
+  padding-left: 125px;
+}
+
+.about td:first-child {
+  padding-right: 115px;
+}
+.about td:last-child {
+  max-width: 500px;
+}
+
+/* Portofolio */
+.portofolio,
+.certificate,
+.contact {
+  margin-left: 318px;
+  margin-right: 317px;
+}
+
+.portofolio .subTittle {
+  text-align: center;
+}
+
+.contents {
+  width: 772px;
+  height: max-content;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 371px;
+  height: 360.6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.sertifikat {
+  width: 50px;
+}
+.contentTittle {
+  margin-top: 290px;
+  height: 72px;
+  font-weight: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--secondary-color);
+}
+
+.contentTittle p {
+  padding-top: 22px;
+  text-align: center;
+}
+
+.contentText {
+  display: none;
+}
+.contentText p {
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.content:hover {
+  .contentTittle {
+    margin-top: 90px;
+    border-radius: 0px;
+  }
+  .contentText {
+    padding-top: 5px;
+    display: block;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Certificate */
+.subMenu {
+  padding-inline-start: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-content: stretch;
+  font-weight: 1000;
+}
+.subMenu li {
+  padding: 8px 30px 8px 30px;
+
+  border-radius: 9px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.subMenu li:hover {
+  background-color: var(--primary-color);
+}
+
+/* Contact */
+Form {
+  margin-top: 30px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  font-weight: 1000;
+  background-color: var(--primary-color);
+}
+
+#name,
+#email,
+#message {
+  height: 50px;
+  width: 650px;
+  background-color: white;
+  border: 2px solid white;
+  margin: 5px;
+  border-radius: 15px;
+  padding-left: 30px;
+}
+#message {
+  height: 100px;
+}
+
+#submit {
+  background-color: var(--Tertiary-color);
+  font-size: 25px;
+  border-radius: 15px;
+  border: 2px solid var(--Tertiary-color);
+  width: 200px;
+  height: 50px;
+}
+
+#submit:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.DetailContent {
+}
+.DetailContent img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 510px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.back {
+  width: 45px;
+  float: left;
 }
