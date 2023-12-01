@@ -6,7 +6,7 @@ import About from "./component/About.js";
 import Portofolio from "./component/Portofolio.js";
 import Certificate from "./component/certificate.js";
 import Contact from "./component/Contact.js";
-import DetailContent from "./component/DetailContent.js";
+// import DetailContent from "./component/DetailContent.js";
 import CertificateDetail from "./component/CertificateDetail.js";
 import PortofolioDetail from "./component/PortofolioDetail.js";
 function App() {

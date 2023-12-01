@@ -23,19 +23,19 @@
     {
       "id": 2,
       "tittle": "Loream Ipsum",
-      "image": "/portofolio/BatuGuntingKertas2.png",
-      "subTittle": "lalalsaala lililili",
+      "image": "/portofolio/Vetapps.png",
+      "subTittle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo elementum tortor, in suscipit eros eleifend quis. Maecenas turpis felis, ullamcorper suscipit purus at, lacinia lacinia lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum eleifend tellus et ante congue, at auctor metus vehicula. Aenean vitae quam nec metus porta porttitor. Morbi feugiat auctor velit ut rutrum. Ut dictum interdum justo, eget vestibulum neque egestas id. Fusce tincidunt nunc arcu. Quisque eu viverra massa. Proin dui libero, ultrices sed odio at, mollis sollicitudin nulla. Nunc ullamcorper lectus quis nisi malesuada, eu pretium nunc ornare. Nulla a sem odio. In ultricies ligula quis augue sodales gravida. Donec urna nisl, tincidunt at metus et, sagittis laoreet risus. zenean placerat eros quis metus tempus finibus. Aliquam venenatis et enim non tincidunt. Phasellus pellentesque gravida eros, in dapibus lectus faucibus at. Sed placerat cursus nisl vel feugiat. Aenean ultrices tellus at porttitor hendrerit. Morbi et facilisis erat. Cras at orci non nulla feugiat efficitur. Suspendisse potenti. Morbi vestibulum neque ut quam dictum, eu lacinia dui condimentum. Nulla mollis lacus nec augue suscipit, id bibendum sapien tincidunt. Fusce velit nisi, ullamcorper sit amet dictum eget, iaculis et erat. Curabitur efficitur commodo mi, non viverra leo. Maecenas dapibus enim justo, sed semper quam rhoncus quis. Vivamus quis ornare nisl. Vivamus lobortis in odio vitae tempus. Phasellus rhoncus tellus sed fermentum posuere. Quisque cursus est a dolor pretium, non porta lacus rhoncus. Donec pulvinar libero odio, sit amet imperdiet arcu posuere quis. Integer iaculis varius orci. Proin ut felis urna.Sed magna turpis, dapibus nec accumsan in, molestie in neque. Vestibulum nec volutpat arcu, ut dictum ante. Phasellus vehicula imperdiet est, id ultricies enim elementum vel. Sed venenatis convallis nibh. Etiam gravida feugiat tincidunt. Nunc eget justo auctor, tempor ex volutpat, aliquet mauris. Quisque aliquam eget eros ac lobortis. In facilisis nisl vestibulum, bibendum purus vitae, ultricies leo. Integer facilisis viverra velit, sit amet mattis tortor. In hac habitasse platea dictumst. Ut euismod, arcu cursus maximus faucibus, diam felis iaculis mauris, venenatis lobortis leo lacus id lectus. In condimentum posuere posuere. Sed interdum dapibus nisl, vel efficitur odio eleifend pharetra. Cras sodales nunc fringilla massa lobortis sodales. Nulla eu tincidunt magna. Phasellus turpis justo, convallis sit amet eros nec, faucibus elementum turpis. In convallis vel orci in scelerisque. Duis id massa vel massa aliquet feugiat posuere luctus metus. Vestibulum nibh felis, ornare id venenatis id, placerat non lacus. Cras finibus augue ut molestie fermentum. Etiam bibendum elit neque, vitae tincidunt ante dictum eget. Nulla ultrices ultricies lobortis. Suspendisse maximus scelerisque dolor vel eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
       "tags": [
-        "tags.id[0]"
+        "Figma"
       ]
     }
   ],
   "certificate": [
     {
       "id": 1,
-      "tittle": "Mentor Study Sharing ",
+      "tittle": "Object-Oriented Programming Mentor at STRING ",
       "image": "/certificate/Mentor-STRING-2023.png",
-      "subTittle": "balbalbal tai",
+      "subTittle": "Study Sharing(STRING) is BEM FIK UPNVJ program for exam preparation. I become a mentor for Object-Oriented Programming or we know as OOP. I capably mentored over 25 Information System students, ascertaining their competency in implementing object-oriented programming (OOP) using the Java programming language. We learned about what is OOP, variable and data type. Also we disscus about Class, Pbject and Method and how we implements that thing in real porject. We also disscus about the different about Method Overriding and inheritance",
       "tags": [
         "Javascript",
         "ReactJS"
@@ -44,15 +44,73 @@
     },
     {
       "id": 2,
-      "tittle": "Front-End Web untuk Pemula",
-      "image": "/certificate/Sertifikat_frontend_Pemula_dociding.png",
-      "subTittle": "balbalbal tai",
+      "tittle": "Front-End Web Beginner",
+      "image": "/certificate/Sertifikat_frontend_Pemula_dicoding.png",
+      "subTittle": "Lorem Ipsum",
       "tags": [
         "Javascript",
         "HTML",
         "CSS"
       ],
       "category": "Skill"
+    },
+    {
+      "id": 3,
+      "tittle": "Introduction Backend",
+      "image": "/certificate/Coursera_IntroBackend.png",
+      "subTittle": "Taking Course in Coursera called Meta Back-End Developer. One of the course is introduction to Back-End Development. In this course I learn about how internet works, how server works, how website works, what is HTML, CSS, and javascript. learn how to build basic website design, etc ",
+      "tags": [
+        "Javascript",
+        "HTML",
+        "CSS"
+      ],
+      "category": "Skill"
+    },
+    {
+      "id": 4,
+      "tittle": "Data Science Course",
+      "image": "/certificate/DataScience_Matahari_Pradipta.png",
+      "subTittle": "Im taking this course for my Artificial Intelegent class in my college. in this course we learn about copy paste and how to use gpt hehe",
+      "tags": [
+        "Data Science",
+        "Python"
+      ],
+      "category": "Skill"
+    },
+    {
+      "id": 5,
+      "tittle": "Publication, Design, and Documention at OPREC 2022",
+      "image": "/certificate/OPREC2022_Matahari_001.png",
+      "subTittle": "This is my first event in KSM Android, in this event i used to designed a Instagram Post, A flyer, a PowerPoint, and documention at welcoming new member of KSM Android",
+      "tags": [
+        "Javascript",
+        "HTML",
+        "CSS"
+      ],
+      "category": "Event"
+    },
+    {
+      "id": 6,
+      "tittle": "Android Beginner Study Club",
+      "image": "/certificate/Sertifikat_AndroBeginner.png",
+      "subTittle": "Learn how to build application, using recycleview, fragment, and call PublicAPI, etc",
+      "tags": [
+        "Kotlin",
+        "OOP",
+        "Android Studio"
+      ],
+      "category": "Skill"
+    },
+    {
+      "id": 7,
+      "tittle": "Data Structure Mentor at STRING",
+      "image": "/certificate/Sertifkat_STRING2022.png",
+      "subTittle": "Study Sharing(STRING) is BEM FIK UPNVJ program for exam preparation. I become a mentor for Object-Oriented Programming or we know as OOP. I capably mentored over 25 Information System students, ascertaining their competency in implementing object-oriented programming (OOP) using the Java programming language. We learned about what is OOP, variable and data type. Also we disscus about Class, Pbject and Method and how we implements that thing in real porject. We also disscus about the different about Method Overriding and inheritance",
+      "tags": [
+        "C",
+        "Data Structure"
+      ],
+      "category": "Event"
     }
   ],
   "Contact": [

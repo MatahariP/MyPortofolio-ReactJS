@@ -11,18 +11,22 @@ function Contact() {
     console.log(event.target);
     event.preventDefault();
     try {
-      await fetch("http://localhost:3000/Contact", {
+      let url = "http://localhost:3000/Contact";
+      await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ name, email, message }),
       });
-      console.log(name);
+      const response = await fetch(url);
+      const dataItem = await response.json();
+      console.log(dataItem);
       setName("");
       setEmail("");
       setMessage("");
-      console.log(name);
+      window.alert(`Terima Kasih ${name} sudah mengisi form!!`);
+      // console.log(name);
     } catch (error) {
       console.error(error);
     }

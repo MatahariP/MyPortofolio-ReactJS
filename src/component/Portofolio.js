@@ -10,7 +10,7 @@ function Portofolio() {
     const response = await fetch(url);
     const dataItem = await response.json();
     setItems(dataItem);
-    console.log("tes");
+    // console.log("tes");
   };
 
   useState(() => {

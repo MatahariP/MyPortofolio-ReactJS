@@ -1,6 +1,9 @@
+import { logDOM } from "@testing-library/react";
 import { Link } from "react-router-dom";
 
 const tagsHandle = (tags) => {
+  // console.log("ha", tags);
+  // console.log("halo", tags[0]);
   return tags.map((tag, index) => <li key={index}>{tag}</li>);
 };
 const limitText = (text, limit) => {

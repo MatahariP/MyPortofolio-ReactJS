@@ -18,9 +18,8 @@ code {
   --primary-font-size: 15px;
 }
 
-* {
-  font-family: "Poppins";
-}
+/* * {
+} */
 .profile {
   border-radius: 50%;
   object-fit: cover;
@@ -232,8 +231,8 @@ aside ul {
   background-repeat: no-repeat;
   width: 371px;
   height: 360.6px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background-color: var(--primary-color);
 }
@@ -242,6 +241,7 @@ aside ul {
 }
 .contentTittle {
   margin-top: 290px;
+  padding-bottom: 15px;
   height: 72px;
   font-weight: 1000;
   border-bottom-left-radius: 10px;
@@ -250,7 +250,10 @@ aside ul {
 }
 
 .contentTittle p {
-  padding-top: 22px;
+  padding-top: 7%;
+  padding-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
   text-align: center;
 }
 
@@ -338,9 +341,9 @@ Form {
   background-color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
 }
-
+/* 
 .DetailContent {
-}
+} */
 .DetailContent img {
   background-size: cover;
   background-position: center;
@@ -352,6 +355,18 @@ Form {
   border-radius: 10px;
 }
 
+.DetailContent p {
+  text-align: justify;
+  margin-top: 25px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.DetailContent h1 {
+  display: flex;
+  padding-right: 7%;
+  justify-content: center;
+}
 .back {
   width: 45px;
   float: left;

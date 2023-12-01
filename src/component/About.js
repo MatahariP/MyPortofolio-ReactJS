@@ -20,7 +20,6 @@ const About = () => {
                 </td>
                 <td>
                   <p>
-                    {" "}
                     Hello, i’m Matahari Pradipta,
                     <br />
                     I’m an ungraduate Information System Student at Universitas

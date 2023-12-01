@@ -16,11 +16,13 @@ function Certificate() {
       setItems(dataItem);
     } else {
       let filterItem = [];
+      let y = 0;
       for (let i = 0; i < dataItem.length; i++) {
         console.log(dataItem[i].category);
         if (dataItem[i].category === value) {
-          let y = 0;
+          console.log("prosess filter", dataItem[i].category);
           filterItem[y] = dataItem[i];
+          console.log("done filter");
           y++;
         }
       }

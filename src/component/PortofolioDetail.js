@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import { useState } from "react";
 import back from "../image/Left.svg";
 // const tagsHandle = (tags) => {
-//   return tags.map((tag, index) => <li key={index}>{tag}</li>);
+//   return Object.entries(tags).map(([key, value]) => <li key={key}>{value}</li>);
 // };
 
 export default function PortofolioDetail() {
@@ -21,14 +21,14 @@ export default function PortofolioDetail() {
     getDataItem();
   });
   //   console.log(data);
-  console.log("sususuusus", item);
+  // console.log("sususuusus", item);
   return (
     <>
       <main>
-        <a href="/portofolio">
-          <img className="back" src={back} alt="back" />
-        </a>
         <div className="DetailContent">
+          <a href="/portofolio">
+            <img className="back" src={back} alt="back" />
+          </a>
           <h1>{item.tittle}</h1>
           <img src={item.image} alt={item.tittle} />
           <p>{item.subTittle}</p>
