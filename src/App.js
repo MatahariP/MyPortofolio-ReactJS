@@ -24,6 +24,9 @@ function App() {
             <Route path="/certificate/:id" element={<CertificateDetail />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <footer>
+            <p>Created by Matahari Pradipta @2023</p>
+          </footer>
         </div>
       </BrowserRouter>
     </>

@@ -1,11 +1,11 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Content from "./Content.js";
 import icon from "../image/logo/Certificate.png";
 
 function Certificate() {
   const url = "http://localhost:3000/certificate";
   const [item, setItems] = useState([]);
+  const [activeItem, setActiveItem] = useState("All");
 
   const getDataItem = async (value) => {
     const response = await fetch(url);
@@ -31,9 +31,14 @@ function Certificate() {
     }
   };
 
-  useState(() => {
+  useEffect(() => {
     getDataItem("All");
-  });
+  }, []);
+
+  const handleClick = (value) => {
+    setActiveItem(value);
+    getDataItem(value);
+  };
 
   return (
     <>
@@ -45,9 +50,24 @@ function Certificate() {
         <br />
 
         <ul className="subMenu">
-          <li onClick={(event) => getDataItem("All")}>All</li>
-          <li onClick={(event) => getDataItem("Skill")}>Skill</li>
-          <li onClick={(event) => getDataItem("Event")}>Event</li>
+          <li
+            onClick={() => handleClick("All")}
+            style={{ backgroundColor: activeItem === "All" ? "#98c5df" : "" }}
+          >
+            All
+          </li>
+          <li
+            onClick={() => handleClick("Skill")}
+            style={{ backgroundColor: activeItem === "Skill" ? "#98c5df" : "" }}
+          >
+            Skill
+          </li>
+          <li
+            onClick={() => handleClick("Event")}
+            style={{ backgroundColor: activeItem === "Event" ? "#98c5df" : "" }}
+          >
+            Event
+          </li>
         </ul>
 
         <div className="contents">
