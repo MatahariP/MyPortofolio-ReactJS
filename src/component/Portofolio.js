@@ -3,12 +3,13 @@ import Content from "../component/Content.js";
 import icon from "../image/logo/Toolbox.png";
 
 function Portofolio() {
-  const url = "http://localhost:3000/portofolio";
+  const url = "https://331469095208424e8daa5550d43a0c3e.api.mockbin.io/";
   const [item, setItems] = useState([]);
 
   const getDataItem = async () => {
     const response = await fetch(url);
-    const dataItem = await response.json();
+    const dataAllItem = await response.json();
+    const dataItem = dataAllItem.portofolio;
     setItems(dataItem);
     // console.log("tes");
   };
@@ -24,13 +25,7 @@ function Portofolio() {
           <h1>Portofolio</h1>
         </div>
         <br />
-        <p className="subTittle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacus
-          lacus, hendrerit vel aliquet sed, varius suscipit sem. Cras turpis
-          quam, lacinia quis purus vitae, dictum posuere arcu. Fusce id luctus
-          lorem. Vestibulum cursus fringilla sem non varius. Praesent nec justo
-          vel mi vulputate{" "}
-        </p>
+        <p className="subTittle"></p>
 
         <div className="contents">
           <Content data={item} />

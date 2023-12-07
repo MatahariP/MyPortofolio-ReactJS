@@ -2,35 +2,48 @@ import React, { useState } from "react";
 import CP from "../image/logo/CP.png";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
   const handleSubmit = async (event) => {
-    console.log(event.target);
     event.preventDefault();
+
     try {
-      let url = "http://localhost:3000/Contact";
+      const url = "https://331469095208424e8daa5550d43a0c3e.api.mockbin.io/";
+
+      const response = await fetch(url);
+      const existingData = await response.json();
+      const newContact = {
+        name,
+        email,
+        message,
+        id: existingData.Contact.length + 1,
+      };
+
+      const updatedContactData = {
+        ...existingData,
+        Contact: [...existingData.Contact, newContact],
+      };
+
       await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify(updatedContactData),
       });
-      const response = await fetch(url);
-      const dataItem = await response.json();
-      console.log(dataItem);
       setName("");
       setEmail("");
       setMessage("");
       window.alert(`Terima Kasih ${name} sudah mengisi form!!`);
-      // console.log(name);
     } catch (error) {
       console.error(error);
     }
   };
+
   return (
     <>
       <main className="contact">
@@ -72,25 +85,6 @@ function Contact() {
             Submit
           </Button>
         </Form>
-        {/* <form onClick={(event) => handleSubmit()}>
-          <div className="formBox">
-            <input type="text" name="name" id="name" placeholder="Your Name" />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your Email"
-            />
-            <input
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Your Message"
-            />
-            <br />
-            <input type="submit" value="Submit" id="submit" />
-          </div>
-        </form> */}
       </main>
     </>
   );

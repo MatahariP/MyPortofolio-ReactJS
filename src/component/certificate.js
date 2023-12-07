@@ -3,14 +3,14 @@ import Content from "./Content.js";
 import icon from "../image/logo/Certificate.png";
 
 function Certificate() {
-  const url = "http://localhost:3000/certificate";
+  const url = "https://331469095208424e8daa5550d43a0c3e.api.mockbin.io/";
   const [item, setItems] = useState([]);
   const [activeItem, setActiveItem] = useState("All");
 
   const getDataItem = async (value) => {
     const response = await fetch(url);
-
-    const dataItem = await response.json();
+    const dataAllItem = await response.json();
+    const dataItem = dataAllItem.certificate;
     if (value === "All") {
       console.log("all", dataItem);
       setItems(dataItem);
