@@ -7,15 +7,14 @@ import back from "../image/Left.svg";
 // };
 
 export default function PortofolioDetail() {
-  const url = "http://localhost:3000/portofolio";
+  const url = "https://331469095208424e8daa5550d43a0c3e.api.mockbin.io/";
   const [item, setItems] = useState([]);
   let { id } = useParams();
   console.log(id);
   const getDataItem = async () => {
     const response = await fetch(url);
     const dataItem = await response.json();
-    setItems(dataItem[id - 1]);
-    console.log("sasaasa", dataItem[id - 1]);
+    setItems(dataItem.portofolio[id - 1]);
   };
 
   useState(() => {

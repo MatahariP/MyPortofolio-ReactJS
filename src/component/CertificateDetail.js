@@ -6,13 +6,13 @@ import back from "../image/Left.svg";
 // };
 
 export default function CertificateDetail() {
-  const url = "http://localhost:3000/certificate";
+  const url = "https://331469095208424e8daa5550d43a0c3e.api.mockbin.io/";
   const [item, setItems] = useState([]);
   let { id } = useParams();
   const getDataItem = async () => {
     const response = await fetch(url);
     const dataItem = await response.json();
-    setItems(dataItem[id - 1]);
+    setItems(dataItem.certificate[id - 1]);
   };
 
   useState(() => {
